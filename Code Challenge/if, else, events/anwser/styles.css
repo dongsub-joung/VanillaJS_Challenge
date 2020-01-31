@@ -1,5 +1,13 @@
-
-.bigScreen {
+body {
+    font-family: sans-serif;
+    display: flex;
+  }
+  
+  h2 {
+    color: white;
+  }
+  
+  .bigScreen {
     background-color: #f1c40f;
   }
   
@@ -11,6 +19,3 @@
     background-color: #3498db;
   }
   
-  h2 {
-    color: white;
-  }
