@@ -1,16 +1,21 @@
-
-.bigScreen {
-    background-color: #f1c40f;
+body {
+    font-family: sans-serif;
+    display: flex;
   }
-
-  .mediumScreen {
-    background-color: #9b59b6;
-  }
-
-  .smallScreen {
-    background-color: #3498db;
-  }
-
+  
   h2 {
     color: white;
   }
+  
+  .bigScreen {
+    background-color: #f1c40f;
+  }
+  
+  .mediumScreen {
+    background-color: #9b59b6;
+  }
+  
+  .smallScreen {
+    background-color: #3498db;
+  }
+  
