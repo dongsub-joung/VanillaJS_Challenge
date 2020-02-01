@@ -1,5 +1,6 @@
 const body= document.body;
 
+
 const BIG_SCREEN="bigScreen";
 const MEDIUM_SCREEN="mediumScreen";
 const SMALL_SCREEN="smallScreen";
@@ -15,7 +16,8 @@ function handleResize(){
     } else {
         body.classList.remove(MEDIUM_SCREEN);
         body.classList.add(SMALL_SCREEN);
+
     }
 }
-
+window.addEventListener("resize", sizeWinF);
 window.addEventListener("resize", handleResize);
