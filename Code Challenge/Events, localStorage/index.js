@@ -1,25 +1,24 @@
 //select에서 value 가져오기
-var e = document.getElementById(`countrySelect`);
-var text = e.options[e.selectedIndex].text;
-
-
 const val_LS= "Country"; //기본 key값
 
-function save(text){
+function getValue(){
+    let e = document.getElementById(`countrySelect`);
+    let text = e.options[e.selectedIndex].text;
+}
+
+function save(){
+    getValue();
     localStorage.setItem(val_LS, text);
 }
 
-function load(){
+function loadaa(){
+    getValue();
     const currentUser=localStorage.getItem(val_LS);
 }
 
+
 function init(){
-    const df= "--Choose an country--";
-    if(text === df && text === null){
-        save();
-    } else {
-        load();
-    }
+    load();
 }
 
 init();
