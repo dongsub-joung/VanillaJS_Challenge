@@ -1,7 +1,6 @@
 const numberId= document.getElementById("numberId"),
-playId= document.getElementById("playId"),
-selectedNum= document.querySelector(".selectedNum"),
-rangeInterface= document.querySelector(".rangeInterface");
+playId= document.getElementById("playId");
+
 
 const numberKey="NUMBER"
 
@@ -22,9 +21,24 @@ function inputNumber(){
 }
 
 
+let rangeScroll= document.getElementById("rangeScroll").value
+
+let selectedNum= document.querySelector(".selectedNum");
+/*
+function scroll(){
+    rangeScroll.addEventListener("change", changeRange);
+}
+*/
+
+function changeRange(rangeScroll){
+    selectedNum =`Generate a number beween 0 and ${rangeScroll}`;
+    return selectedNum.textContent;
+}
+
 
 function init(){
-    console.log(saveNumber());
+    scroll();
+    changeRange(rangeScroll);
 }
 
 init();
