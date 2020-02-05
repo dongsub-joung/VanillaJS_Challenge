@@ -6,14 +6,15 @@
     </head>
     <body>
         <h1>Random Number Game</h1>
-        <h3 class="selectedNum">Generate a number beween 0 and 200</h3>
-    
-        <input id="rangeScroll" type="range" min="0" max="200" />
-        <div>
+        <h3>Generate a number beween 0 and <span id="sliderValueView">100</span> </h3>
+        <input id="rangeScroll" type="range" min="0" step="1" max="200" value="100" />
+        <form>
             Guess the number 
-            <input type="number" id="numberId" class="numberClass" />
+            <input type="number" id="numberId" />
             <input type="button" value="play!" id="playId" />
-        </div>
+        </form>
+        <h4>U chose: <span id="userInput"></span>, the machine Chose: <span id="machineInput"></span></h4> 
+        <div id="result"></div>
         <script src="index.js"></script>
     </body>
 </html>
