@@ -17,7 +17,7 @@ function handleSubmit(){
 
 //입력받은 text를 문자의 형태로 삽입
 function paint(text){
-    if(text === "PENDING"){
+    if(text === pending_LS){
         localStorage.setItem(pending_LS, text);
         pending.innerHTML= `${text}`;
     }else{
