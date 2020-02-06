@@ -50,12 +50,3 @@ function init(){
 }
 
 init();
-
-
-/*
-const numberKey="NUMBER"
-
-function saveNumber(num){
-    localStorage.setItem(numberKey, `${num}`);
-}
-*/
