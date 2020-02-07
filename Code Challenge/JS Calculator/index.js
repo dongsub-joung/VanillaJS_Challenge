@@ -5,34 +5,35 @@ function add(num){
 }
 */
 let tOf= false; // 2번 연속 연산자면 1, 아니면 0
+let tofCount=0;
 function add(num){
-    if(tOf === false){
-        if( overlap(num) === true){
+//input이 숫자인지 문자인지 판별
+    if(isNaN(num) == true){
+        tofCount++;     //2연속 연산자면 0으로
+    } else{ 
+        tofCount=0;
+    }
 
-        } else {
-            calculator.value += num;
-            calculator.value= eval(calculator.value);
-        }
-    }else{
-        calculator.value += num;
+    if(tofCount > 1){
+        return tof=true;
+    } 
+
+    if(tOf == false){
+        claculation(num);
         calculator.value= eval(calculator.value);
+    } else {    //2연속 연산자면
+        return;
     }
 }
-const multi= document.querySelector(".multi");
-console.log(multi);
+
+function claculation(num){
+    calculator.value += num;
+}
 
 function overlap(num){
-    if(num == String){
-        tOf= true;
-    } else{ 
-        tOf= false;
-    }
+    
 } 
-/*
-function turnOf(){
-    return tOf=false;
-}
-*/
+
 const equals= document.getElementById("equals");
 function result(){
     calculator.value= eval(calculator.value);
@@ -41,3 +42,4 @@ function result(){
 function reset(){
     calculator.value="";
 }
+
