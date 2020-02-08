@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+    color: green;
+}
+
+#clockSec{
+    font-size: xx-small;
+}
+
+.userName{
+    display: block;
+}
