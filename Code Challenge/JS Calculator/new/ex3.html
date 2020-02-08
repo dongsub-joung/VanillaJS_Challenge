@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Calculator</title>
+</head>
+<body>
+    <table width=500 align=center>
+        <th colspan="5">계산기</th>
+        <tr>
+            <td colspan=5 align=center><input type="text" id="showText"
+                style="width: 350pt; height: 20pt"></td>
+        </tr>
+        
+        <tr>
+            <td colspan=3 align=center><input type="button" id="clearBtn"
+                onclick=clearAll() value="Clear" style="width: 130pt; height: 30pt"></td>
+            <td colspan=2 align=left><input type="button" id="equal"
+                onclick=getResult() value="=" style="width: 130pt; height: 30pt"></td>
+        </tr>
+        
+        <tr>
+            <td align=center><input type=button id=1 value=1
+                onclick=selectedBtn(1) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=2 value=2
+                onclick=selectedBtn(2) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=3 value=3
+                onclick=selectedBtn(3) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=plus value=+
+                onclick=selectedOp("+") style="width: 40pt; height: 30pt"></td>
+            <td align=left><input type=button id=square value=x^y
+                onclick=selectedOp("^") style="width: 40pt; height: 30pt"></td>
+        </tr>
+        
+        <tr>
+            <td align=center><input type=button id=4 value=4
+                onclick=selectedBtn(4) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=5 value=5
+                onclick=selectedBtn(5) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=6 value=6
+                onclick=selectedBtn(6) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=minus value="-"
+                onclick=selectedOp("-") style="width: 40pt; height: 30pt"></td>
+            <td align=left><input type=button id=sin value="sin"
+                onclick=mathText("_sin") style="width: 40pt; height: 30pt"></td>
+        </tr>
+        <tr>
+            <td align=center><input type=button id=7 value=7
+                onclick=selectedBtn(7) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=8 value=8
+                onclick=selectedBtn(8) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=9 value=9
+                onclick=selectedBtn(9) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=multi value=*
+                onclick=selectedOp("*") style="width: 40pt; height: 30pt"></td>
+            <td align=left><input type=button id=cos value=cos
+                onclick=mathText("_cos") style="width: 40pt; height: 30pt"></td>
+        </tr>
+        <tr>
+            <td align=center><input type=button id=0 value=0
+                onclick=selectedBtn(0) style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id="plusNMinus" value="+/-"
+                onclick=changeSign() style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=dot value="."
+                onclick=selectedBtn('.') style="width: 40pt; height: 30pt"></td>
+            <td align=center><input type=button id=divide value="/"
+                onclick=selectedOp("/") style="width: 40pt; height: 30pt"></td>
+            <td align=left><input type=button id=tan value="tan"
+                onclick=mathText("_tan") style="width: 40pt; height: 30pt"></td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+출처: https://olsh1108o.tistory.com/entry/HTMLJavaScript-계산기-만들기 [개발하는개발자]
