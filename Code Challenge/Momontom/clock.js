@@ -1,4 +1,3 @@
-let div= document.querySelector(`.div`);
 let clock= document.querySelector(".clock");
 
 let clockSec= document.querySelector("#clockSec");

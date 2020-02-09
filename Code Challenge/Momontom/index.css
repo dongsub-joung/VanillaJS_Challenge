@@ -7,6 +7,12 @@ body{
     font-size: xx-small;
 }
 
-.userName{
+.form,
+.userInput,
+.on {
+    display: none;
+}
+
+.showing {
     display: block;
 }
