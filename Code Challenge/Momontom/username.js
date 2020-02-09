@@ -11,7 +11,7 @@ function paint(text){   //키값이 입력된 후/  키값이 있는지 확인�
     nameForm.classList.remove(userName_CN);
     nameViewer.classList.add(userName_CN);   
     nameViewer.innerHTML= `Hi ${text}`;
-    html.addEventListener("click", plus);
+    plus();
 }
 
 const on= document.querySelector(".on");
