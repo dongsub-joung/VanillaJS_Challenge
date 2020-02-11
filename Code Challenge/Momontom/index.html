@@ -2,26 +2,30 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="todo.css">
         <title>Momentom</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
-        <span class="clock"> 00 : 00  </span>
-        <span id="clockSec"> :00 </span>
+    <div class="moveForm">
+        <div id="useless">
+            <div class="weather"></div>
+            <span class="clock"> 00 : 00  </span>
+            <span id="clockSec"> :00 </span>       
+        </div>
         
+
        <form class="nameForm form">
-        <input type="text" placeholder="write Something">
+        <input class="nameIn" type="text" placeholder="User Name">
        </form>
-       <h5 class="nameViewer"></h5>
+       <div class="nameViewer"></div>
       
        <form class= "toDoForm">
-           <input class="toDoInput" placeholder="write TODO List">
+        <input class="toDoInput" placeholder="ToDo List">
        </form>
-       <h6 class="on">To Do List</h6> 
        <ul class="toDoViewer"></ul>
        
-       <span class="weather"></span>
-
+    </div>
        
         <script src="weather.js"></script>
         <script src="bg.js"></script>

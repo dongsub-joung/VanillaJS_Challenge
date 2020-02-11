@@ -16,9 +16,17 @@ function paintList(text){   //입력값을 저장
     const li= document.createElement("li");
     const span= document.createElement("span");
     const delBtn= document.createElement("button");
+    delBtn.style.opacity= 0.6   ;
+    delBtn.style.fontSize= `33px`;
+    delBtn.style.border= `none`;
+    delBtn.style.background=`transparent`;
+    
+    span.style.fontSize=`20px`;
 
-    delBtn.innerText="❌";
+
+    delBtn.innerText=" ❌";
     delBtn.addEventListener("click", deleteBtn);
+    
 
     li.appendChild(span);
     li.appendChild(delBtn);
@@ -51,11 +59,10 @@ const list_VAL="List";
 
 function loadPreVal(){  //입력되면, 입력값을 저장하고, 출력 그리고 그전에 저장값을 받아와서 /출력
     const getObj= localStorage.getItem(list_VAL);
-    
     if(getObj !== null){
         const getString= JSON.parse(getObj);
         getString.forEach(function(toDo){
-            paintList(getString.text);
+        paintList(toDo.text);
         });
     }
 }

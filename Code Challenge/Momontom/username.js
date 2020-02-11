@@ -10,7 +10,7 @@ const html= document.querySelector("html");
 function paint(text){   //키값이 입력된 후/  키값이 있는지 확인하고 있으면 기존 값을 불러와서 출력
     nameForm.classList.remove(userName_CN);
     nameViewer.classList.add(userName_CN);   
-    nameViewer.innerHTML= `Hi ${text}`;
+    nameViewer.innerHTML= `Hi ${text}!`;
     plus();
 }
 

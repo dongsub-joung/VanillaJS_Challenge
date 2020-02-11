@@ -10,7 +10,7 @@ function inputBg(num){
     body.prepend(image);
 }
 
-const ImgNum=7;
+const ImgNum=6;
 function generageNum(){
     const ran= Math.floor(Math.random()*ImgNum);
     return ran;
