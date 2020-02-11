@@ -16,13 +16,16 @@ function paintList(text){   //입력값을 저장
     const li= document.createElement("li");
     const span= document.createElement("span");
     const delBtn= document.createElement("button");
+
+    li.style.margin=`12px`;
+
     delBtn.style.opacity= 0.6   ;
-    delBtn.style.fontSize= `33px`;
+    delBtn.style.fontSize= `28px`;
     delBtn.style.border= `none`;
     delBtn.style.background=`transparent`;
     
-    span.style.fontSize=`20px`;
-
+    span.style.fontSize=`40px`;
+    span.style.fontFamily=`'Times New Roman', Times, serif`;
 
     delBtn.innerText=" ❌";
     delBtn.addEventListener("click", deleteBtn);

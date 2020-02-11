@@ -11,14 +11,10 @@ function paint(text){   //키값이 입력된 후/  키값이 있는지 확인�
     nameForm.classList.remove(userName_CN);
     nameViewer.classList.add(userName_CN);   
     nameViewer.innerHTML= `Hi ${text}!`;
-    plus();
 }
 
 const on= document.querySelector(".on");
-function plus(){
-    on.classList.remove("on");
-    on.classList.add("showing");
-}
+
 
 
 function handleSubmit(event){   //입력값이 입력된 후 실행됨. 값을 저장하고, 출력함 이건 기존 값이 없어야 실행됨
