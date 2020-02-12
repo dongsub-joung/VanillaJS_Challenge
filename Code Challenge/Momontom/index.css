@@ -65,3 +65,15 @@ body{
 ul{
     list-style:none;
 }
+
+.quote,
+.giveup{
+    text-align-last: right;
+    position: absolute;
+    bottom:0;
+    width: 95%;
+    height: 100px;  
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 23px;
+    font-weight: bolder;
+}
