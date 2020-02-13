@@ -1,4 +1,25 @@
-body{
+html{
     background-color: black;
+    color: white;
 }
 
+.btn{
+    width: 80pt;
+    height: 60pt;
+    border-radius: 15%;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.multi{
+    background-color: rgb(253, 92, 17);
+    border-width: 8px;
+    border-bottom-color: white;
+}
+
+.num{
+    background-color: rgb(48, 46, 45);
+    border-width: 8px;
+    border-bottom-color: white;
+    color: white;
+}

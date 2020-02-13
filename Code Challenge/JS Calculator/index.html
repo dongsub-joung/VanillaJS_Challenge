@@ -2,34 +2,93 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="index.css">
         <title>Calculator</title>
     </head>
     <body>
-     <div>
-        <input id="calculator">
-        <button onclick="reset()">C</button> <br>
-        
-        <button value="7" onclick="add(7)">7</button>
-        <button value="8" onclick="add(8)">8</button>
-        <button value="9" onclick="add(9)">9</button>
-        <button onclick="add(`+`)">+</button> <br>
+        <table style="padding: 3%; padding-top: 4%;">
+            <tr>
+                <td colspan="4">
+                    <input type="text" style="width: 96%; height: 80px; font-size: 30px; text-align: right; padding-right: 10px;">
+                </td>
+            </tr>
 
-        <button value="4" onclick="add(4)">4</button>
-        <button value="5" onclick="add(5)">5</button>
-        <button value="6" onclick="add(6)">6</button>
-        <button onclick="add(`-`)">-</button> <br>
+            <tr>
+                <td>
+                    <input class="btn multi" type="button" value="log" >
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="√" >
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="^">
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="Ⅽ" >
+                </td>
+            </tr>
 
-        <button value="1" onclick="add(1)">1</button>
-        <button value="2" onclick="add(2)">2</button>
-        <button value="3" onclick="add(3)">3</button>
-        <button id="multi" onclick="add(`*`)">*</button> <br>
-
-        <button value="0" onclick="add(0)">0</button>
-        <button id="equals" onclick="result()">=</button>
-        <button onclick="add(`/`)">/</button> <br>
-     </div>  
+            <tr>
+                <td>
+                    <input class="btn num" type="button" value="7" >
+                </td>
+                <td>
+                    <input class="btn num" type="button" value="8" >
+                </td>
+                <td>
+                    <input class="btn num" type="button" value="9 ">
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="+">
+                </td>
+            </tr>
     
+            <tr>
+                <td>
+                    <input class="btn num" type="button" value="4" >
+                </td>
+                <td>
+                    <input class="btn num" type="button" value="5" >
+                </td>
+                <td>
+                    <input class="btn num" type="button" value="6">
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="-">
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <input class="btn num" type="button" value="1" >
+                </td>
+                <td>
+                    <input class="btn num" type="button" value="2">
+                </td>
+                <td>
+                    <input class="btn num" type="button" value="3">
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="*">
+                </td>
+            </tr>
+    
+            <tr>
+                <td colspan="2">
+                    <input class="btn num" type="button" value="0" style="width: 100%;">
+                </td>
+                
+                <td>
+                    <input class="btn" type="button" value="=" style="background-color: antiquewhite; border-width: 8px; border-bottom-color: white;">
+                </td>
+                <td>
+                    <input class="btn multi" type="button" value="/ ">
+                </td>
+            </tr>
+    
+        </table>
+        
+
     <script src="index.js"></script> 
     </body>
 </html>
