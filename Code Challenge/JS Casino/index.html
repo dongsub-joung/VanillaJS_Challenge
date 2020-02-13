@@ -3,8 +3,10 @@
     <head>
         <meta charset="UTF-8"/>
         <title>Random Number Game</title>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
+        <iframe src="src/bgm.mp3" frameborder="0" allow="autoplay;"></iframe>
         <h1>Random Number Game</h1>
         <h3>Generate a number beween 0 and <span id="sliderValueView">100</span> </h3>
         <input id="rangeScroll" type="range" min="0" step="1" max="200" value="100" />
@@ -12,9 +14,18 @@
             Guess the number 
             <input type="number" id="numberId" />
             <input type="button" value="play!" id="playId" />
+             
         </form>
-        <h4>U chose: <span id="userInput"></span>, the machine Chose: <span id="machineInput"></span></h4> 
+        
+        <h4 class="show">
+            U chose: <span id="userInput"></span> 
+        </h4>
+        <h4 class="showTwo">
+            the machine Chose: <span id="machineInput"></span></div>
+        </h4> 
         <div id="result"></div>
+
         <script src="index.js"></script>
     </body>
 </html>
+

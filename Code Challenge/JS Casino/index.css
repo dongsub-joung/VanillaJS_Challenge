@@ -1,0 +1,19 @@
+html{
+    background-color: white;
+    background-image: url(src/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    color: black;
+}
+
+.show,
+.showTwo{
+    display:  none;
+}
+
+.on{
+    display: block;
+}
