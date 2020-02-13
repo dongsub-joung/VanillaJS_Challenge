@@ -31,6 +31,8 @@ function createNumber(){
         result.innerText=`U Win`;
     } else{
         result.innerText=`U rose`;
+        result.style.textAlign=`right`;
+        result.style.fontSize=`80px`
     }
 }
 
@@ -43,5 +45,9 @@ function init(){
     playId.addEventListener("click", createNumber);
     scroll(); 
 }
+
+const audio= document.querySelector("audio");
+audio.volume=0.3
+
 
 init();
