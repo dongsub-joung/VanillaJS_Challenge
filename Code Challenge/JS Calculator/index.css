@@ -1,6 +1,11 @@
 html{
-    background-color: black;
+    background-color: white;
     color: white;
+    background: url(src/1.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .btn{
@@ -22,4 +27,21 @@ html{
     border-width: 8px;
     border-bottom-color: white;
     color: white;
+}
+
+table{
+    background-color: black;
+    border-radius: 15px;
+}
+
+.result{
+    background-color: white;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 500px;
+    width: 96%; 
+    height: 80px; 
+    font-size: 40px; 
+    text-align: right; 
+    padding-right: 10px;
 }
